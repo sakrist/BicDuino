@@ -27,7 +27,7 @@ module main() {
             translate([-1,5.5,-1]) color([79/255, 166/255, 253/255, 1]) cube([6, 5, 5]);
             
             // battery space
-            translate([8,8,3.58]) cylinder(5.3, d=20.5, $fn=360);
+            translate([8,8,3.58]) cylinder(9.3, d=20.5, $fn=360);
             
             // lid space h = 1.321
 //            translate([8,8,6.8]) cylinder(3.1, d=22, $fn=360);
@@ -53,7 +53,9 @@ module main() {
 }
 
 
-translate([0,-2, 2]) main();
+sc = 1.1;
+
+scale(sc) translate([-1.5,-0.5, 2])  main();
 
 
 
