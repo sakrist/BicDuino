@@ -1,7 +1,7 @@
 include <threads.scad>
 
-// size of RFduino 15, 15, 3.5
-// size of coin d=20.5, h=3.2
+// RFduino 15 x 15 x 3.5 mm
+// Coin Batttery d=20, h=3.2 mm
 
 module triPiramida(height, width, length) {
     polyhedron(
@@ -18,7 +18,7 @@ module main() {
         
         difference() {
             // main
-           translate([-4,-5,-2]) color([79/255, 166/255, 253/255, 1]) cube([24, 26, 13]);
+           translate([-4,-5,-2]) color([79/255, 166/255, 253/255, 1]) cube([24, 26, 12]);
             
             // board space
             translate([1.5,0.5,0]) color([79/255, 166/255, 253/255, 1]) cube([15, 15, 3.6]);
