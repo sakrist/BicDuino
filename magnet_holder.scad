@@ -15,6 +15,21 @@ module holder() {
         
         // for spoke thread 
         translate([-5.5,-1,-2]) cube([11, 2, 6]);
+        
+        // for magnet
+        tr_y = 2.2;
+        di = 0.5;
+        fn = 30;
+        translate([0,tr_y,-6]) color([1, 1, 0, 1]) cylinder(3, d=di, $fn=fn);
+        translate([0,-tr_y,-6]) color([1, 1, 0, 1]) cylinder(3, d=di, $fn=fn);
+        
+        translate([1,tr_y-0.3,-6]) color([1, 1, 0, 1]) cylinder(3, d=di, $fn=fn);
+        translate([1,-(tr_y-0.3),-6]) color([1, 1, 0, 1]) cylinder(3, d=di, $fn=fn);
+        
+        translate([-1,tr_y-0.3,-6]) color([1, 1, 0, 1]) cylinder(3, d=di, $fn=fn);
+        translate([-1,-(tr_y-0.3),-6]) color([1, 1, 0, 1]) cylinder(3, d=di, $fn=fn);
+
+        
     }
     
     x = 3.4;
