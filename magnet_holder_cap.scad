@@ -21,4 +21,4 @@ module holder_cap() {
     
 }
 
-scale(1.2) translate([0,0,5]) rotate([180,0,0]) holder_cap();
+translate([0,0,5]) rotate([180,0,0]) holder_cap();
